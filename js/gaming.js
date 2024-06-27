@@ -1,4 +1,13 @@
-const letterBox = ["apple", "banana", "because"];
+const letterBox = [
+  "cinema",
+  "fruit",
+  "anatomy",
+  "library",
+  "onion",
+  "stomach",
+  "teacher",
+  "spinach",
+];
 
 const lengthBox = letterBox.length;
 
@@ -25,7 +34,7 @@ for (let i = 0; i < computerWordArray.length; i++) {
   makeDiv(i);
 }
 
-let life = 3;
+let life = 5;
 let leftLetter = myLetter.length;
 
 const guessInput = document.querySelector("#letter");
@@ -49,7 +58,7 @@ const handleHM = (event) => {
   if (correct == 0) {
     life -= 1;
     description.innerHTML = `생명이 1 차감되었습니다. 남은 생명은 ${life}입니다. `;
-    heart[2 - life].className = "fa-regular fa-heart";
+    heart[4 - life].className = "fa-regular fa-heart";
   } else {
     description.innerHTML = `${answer}은(는) 포함됩니다. 현재 단어는 ${myLetter.join(
       ""
@@ -57,7 +66,7 @@ const handleHM = (event) => {
   }
   if (life == 0) {
     description.innerHTML = `생명이 0이 되어 게임이 종료되었습니다.`;
-    guessForm.style.display = "none";
+    guessForm.style.visibility = "hidden";
   } else if (leftLetter == 0) {
     description.innerHTML = `${answer}은(는) 포함됩니다. 모든 단어를 완성하셨습니다. 최종 단어는 ${myLetter.join(
       ""
