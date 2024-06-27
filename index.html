@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman game</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="title">단어를 맞춰보세요.</header>
+    <div class="life">
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class="hangman"></div>
+    <div class="notice"><span class="description"></span></div>
+    <nav class="board">
+      <div class="correct"></div>
+      <div class="answer">
+        <form id="guessForm">
+          <input id="letter" required minlength="1" , maxlength="1" />
+          <input class="btn" value="보내기" type="button" />
+        </form>
+      </div>
+    </nav>
+    <script src="js/gaming.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d29c5fb477.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

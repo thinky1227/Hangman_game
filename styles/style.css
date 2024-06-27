@@ -1,0 +1,89 @@
+@import "reset.css";
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 75px;
+}
+
+.life {
+  height: 30px;
+  color: red;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.life i {
+  margin: 0px 5px;
+}
+
+.board {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 10px;
+
+  display: flex;
+  box-sizing: border-box;
+}
+
+.correct {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.notice {
+  text-align: center;
+  padding-top: 90px;
+  font-size: 30px;
+}
+
+.hangman {
+  height: 300px;
+}
+
+.alphabet {
+  width: 80px;
+  height: 80px;
+  border: solid 3px black;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.answer {
+  width: 20%;
+}
+
+#letter {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+}
+
+#letter::placeholder {
+  text-align: center;
+}
+
+.btn {
+  border-style: none;
+  background-color: aquamarine;
+}
+
+#guessForm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#guessForm label,
+#guessForm input {
+  display: block;
+}
